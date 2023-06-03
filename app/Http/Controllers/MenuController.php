@@ -93,6 +93,6 @@ class MenuController extends BaseController
      */
 
     public function getMenuItems() {
-        return MenuItem::with('childrenRecursive')->whereNull('parent_id')->get()->toArray();
+        throw new \Exception('implement in coding task 3');
     }
 }
